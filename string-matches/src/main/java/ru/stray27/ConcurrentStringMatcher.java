@@ -1,3 +1,5 @@
+package ru.stray27;
+
 import java.util.concurrent.*;
 import java.util.regex.Pattern;
 
