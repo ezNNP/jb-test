@@ -18,8 +18,8 @@ public class ConcurrentStringMatcher {
             return matchesTask.get(timeout, timeUnit);
         } catch (InterruptedException | ExecutionException | TimeoutException e) {
             matchesTask.cancel(true);
-            System.err.println(e.getMessage());
-            throw new RuntimeException(e);
+            e.printStackTrace();
+            return false;
         }
     }
 
